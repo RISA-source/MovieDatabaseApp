@@ -58,7 +58,6 @@ Password: admin123
 
 - Single admin account only
 - No user registration (public viewing only)
-- Basic search functionality
 - No pagination for large datasets
 
 ## Assignment Compliance
