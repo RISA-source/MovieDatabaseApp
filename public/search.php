@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="search-grid">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" id="title" name="title" placeholder="Search by title">
+                <input type="text" id="title" name="title" placeholder="Start typing for suggestions..." autocomplete="off">
             </div>
             
             <div class="form-group">
