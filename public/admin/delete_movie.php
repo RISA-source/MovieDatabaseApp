@@ -38,10 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     
     <div style="text-align: center; margin: 2rem 0;">
-        <img src="<?php echo getBaseUrl(); ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
+        <img src="<?= BASE_URL ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
             alt="<?php echo e($movie['title']); ?>"
             style="max-width: 200px; border-radius: 8px;"
-            onerror="this.src='<?php echo getBaseUrl(); ?>/uploads/posters/default.jpg'">
+            onerror="this.src='<?= BASE_URL ?>/uploads/posters/default.jpg'">
     </div>
     
     <h2 style="text-align: center; margin-bottom: 1rem;">

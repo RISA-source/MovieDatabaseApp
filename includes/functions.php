@@ -1,4 +1,7 @@
 <?php
+
+require_once __DIR__ . '/../config/app.php';
+
 session_start();
 
 // Check if admin is logged in
@@ -9,14 +12,9 @@ function isAdminLoggedIn() {
 // Redirect if not admin
 function requireAdmin() {
     if (!isAdminLoggedIn()) {
-        header('Location: ' . getBaseUrl() . '/public/admin/login.php');
+        header('Location: ' . BASE_URL . '/public/admin/login.php');
         exit;
     }
-}
-
-// Get base URL
-function getBaseUrl() {
-    return $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/MovieApp';
 }
 
 // Sanitize output to prevent XSS
@@ -55,7 +53,7 @@ function uploadPoster($file) {
     $filename = uniqid() . '_' . time() . '.' . $ext;
     
     // Create upload directory if it doesn't exist
-    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/MovieApp/uploads/posters/';
+    $uploadDir = BASE_PATH . '/uploads/posters/';
     if (!is_dir($uploadDir)) {
         mkdir($uploadDir, 0777, true);
     }
@@ -73,7 +71,7 @@ function uploadPoster($file) {
 // Delete poster file
 function deletePoster($filename) {
     if ($filename && $filename !== 'default.jpg') {
-        $path = $_SERVER['DOCUMENT_ROOT'] . '/MovieApp/uploads/posters/' . $filename;
+        $path = BASE_PATH . '/uploads/posters/' . $filename;
         if (file_exists($path)) {
             unlink($path);
         }

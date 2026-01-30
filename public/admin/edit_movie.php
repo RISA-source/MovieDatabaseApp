@@ -101,9 +101,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         <div class="form-group">
             <label>Current Poster</label>
-            <img src="<?php echo getBaseUrl(); ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
+            <img src="<?= BASE_URL ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
                 style="max-width: 200px; display: block; margin-bottom: 10px;"
-                onerror="this.src='<?php echo getBaseUrl(); ?>/uploads/posters/default.jpg'">
+                onerror="this.src='<?= BASE_URL ?>/uploads/posters/default.jpg'">
         </div>
         
         <div class="form-group">

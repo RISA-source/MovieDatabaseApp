@@ -37,9 +37,9 @@ $movies = $stmt->fetchAll();
         <?php foreach ($movies as $movie): ?>
             <tr>
                 <td>
-                    <img src="<?php echo getBaseUrl(); ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
+                    <img src="<?= BASE_URL ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
                          alt="<?php echo e($movie['title']); ?>"
-                         onerror="this.src='<?php echo getBaseUrl(); ?>/uploads/posters/default.jpg'">
+                         onerror="this.src='<?= BASE_URL ?>/uploads/posters/default.jpg'">
                 </td>
                 <td><?php echo e($movie['title']); ?></td>
                 <td><?php echo e($movie['year']); ?></td>

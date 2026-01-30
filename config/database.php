@@ -1,9 +1,15 @@
 <?php
-// Database configuration
+// Local Database Configuration
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'movie_db');
 define('DB_USER', 'root');
 define('DB_PASS', '');
+
+// College Database Configuration
+// define('DB_HOST', 'localhost');
+// define('DB_NAME', 'np03cs4a240092');
+// define('DB_USER', 'np03cs4a240092');
+// define('DB_PASS', 'DDT6D54YCm');
 
 try {
     $pdo = new PDO(

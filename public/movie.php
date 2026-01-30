@@ -22,9 +22,9 @@ $pageTitle = e($movie['title']) . " - Movie Database";
 
 <div class="movie-detail">
     <div>
-        <img src="<?php echo getBaseUrl(); ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
+        <img src="<?= BASE_URL ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
              alt="<?php echo e($movie['title']); ?>"
-             onerror="this.src='<?php echo getBaseUrl(); ?>/uploads/posters/default.jpg'">
+             onerror="this.src='<?= BASE_URL ?>/uploads/posters/default.jpg'">
     </div>
     <div class="movie-detail-info">
         <h1><?php echo e($movie['title']); ?> (<?php echo e($movie['year']); ?>)</h1>

@@ -90,9 +90,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="movie-grid">
             <?php foreach ($searchResults as $movie): ?>
                 <div class="movie-card">
-                    <img src="<?php echo getBaseUrl(); ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
+                    <img src="<?= BASE_URL ?>/uploads/posters/<?php echo e($movie['poster']); ?>" 
                         alt="<?php echo e($movie['title']); ?>"
-                        onerror="this.src='<?php echo getBaseUrl(); ?>/uploads/posters/default.jpg'">
+                        onerror="this.src='<?= BASE_URL ?>/uploads/posters/default.jpg'">
                     <div class="movie-info">
                         <h3><?php echo e($movie['title']); ?></h3>
                         <div class="movie-meta">
