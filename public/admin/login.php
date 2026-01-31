@@ -62,7 +62,6 @@ include __DIR__ . '/../../includes/header.php';
         <button type="submit" class="btn">Login</button>
     </form>
     
-    <p style="margin-top: 1rem; color: #666;">Default: admin / admin123</p>
 </div>
 
 <?php include __DIR__ . '/../../includes/footer.php'; ?>
