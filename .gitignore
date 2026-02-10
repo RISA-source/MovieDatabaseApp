@@ -1,1 +1,23 @@
+# Database
 movie_db.sql
+
+# Configuration files with credentials
+config/database.php
+
+# Uploaded files
+uploads/posters/*
+!uploads/posters/.gitkeep
+!uploads/posters/default.jpg
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
