@@ -1,8 +1,8 @@
 <?php
 // Local Database Configuration
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'movie_db');
-define('DB_USER', 'root');
+define('DB_HOST', '');
+define('DB_NAME', '');
+define('DB_USER', '');
 define('DB_PASS', '');
 
 try {

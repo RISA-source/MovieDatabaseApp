@@ -18,12 +18,6 @@ A simple PHP-based movie management system with admin panel and public viewing i
 - MySQL 5.7 or higher
 - Apache/Nginx web server
 
-## Default Admin Credentials
-```
-Username: admin
-Password: admin123
-```
-
 ## Usage
 
 ### Public Users
