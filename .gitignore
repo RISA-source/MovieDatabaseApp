@@ -1,9 +1,3 @@
-# Database
-movie_db.sql
-
-# Configuration files with credentials
-config/database.php
-
 # Uploaded files
 uploads/posters/*
 !uploads/posters/.gitkeep
